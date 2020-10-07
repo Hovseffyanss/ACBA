@@ -1,0 +1,25 @@
+.section3 {
+  margin-top: 111px;
+  .boxes1,
+  .boxes2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    .box1,
+    .box2 {
+      height: 240px;
+      width: 545px;
+      position: relative;
+      background: $Gray;
+      border-radius: 15px;
+      img {
+        position: absolute;
+        left: -60px;
+        border-radius: 15px;
+      }
+    }
+    .box1 {
+      left: 60px;
+    }
+  }
+}

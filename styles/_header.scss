@@ -1,0 +1,66 @@
+header {
+  nav {
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.08);
+    padding: 0px 28px;
+    .user {
+      .person {
+        height: 59px;
+        width: 190px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border: 2px solid #ebebeb;
+        box-sizing: border-box;
+        border-radius: 35px;
+      }
+      display: flex;
+      align-items: center;
+      .icon {
+        padding: 0px 20px;
+      }
+    }
+    ul {
+      list-style: none;
+      li {
+        display: inline-block;
+        padding: 0px 30px;
+        a {
+          text-decoration: none;
+          color: $Green;
+          img {
+            vertical-align: middle;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+  .breadcrumb {
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 340px;
+    margin-top: 28px;
+    margin-bottom: 48px;
+    color: $GrayMutedText;
+    ul {
+      li {
+        display: inline-block;
+        padding: 0px 10px;
+      }
+    }
+  }
+  .slogan {
+    display: flex;
+    margin-left: 340px;
+    align-items: center;
+    img {
+      padding-right: 46px;
+    }
+  }
+}
