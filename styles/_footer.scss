@@ -1,4 +1,9 @@
 footer {
+  hr {
+    border: 2px dashed #000000;
+    opacity: 0.2;
+    margin-top: 9px;
+  }
   height: 456px;
   margin-top: 80px;
   background-color: $Gray;
@@ -64,11 +69,6 @@ footer {
     }
   }
 }
-hr {
-  border: 2px dashed #000000;
-  opacity: 0.2;
-  margin-top: 9px;
-}
 
 .info {
   margin-top: 48px;
@@ -93,5 +93,9 @@ hr {
     padding-left: 30px;
     padding-right: 30px;
     height: 555px;
+    .logo {
+      height: 48px;
+      width: 235px;
+    }
   }
 }

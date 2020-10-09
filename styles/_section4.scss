@@ -13,9 +13,48 @@
       background: #ffffff;
       box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.15);
       border-radius: 15px;
-      img {
+      .fa-bookmark {
+        color: #a8a8a8;
+        position: absolute;
+        left: 323px;
+        bottom: 343px;
+      }
+      .circle-icon {
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      .cardImg {
         position: absolute;
         bottom: 183px;
+      }
+      .text {
+        .title {
+          bottom: 150px;
+          position: absolute;
+          margin-left: 20px;
+        }
+        p {
+          top: 202px;
+          position: absolute;
+          margin-left: 20px;
+        }
+        .footer {
+          bottom: 21px;
+          position: absolute;
+          margin-left: 20px;
+          .rating {
+            margin-left: 246px;
+            .fa-star {
+              color: #ffd333;
+              margin-right: 3px;
+            }
+          }
+        }
       }
     }
   }
@@ -27,18 +66,99 @@
       width: 693px;
       margin-left: 123px;
       height: 398px;
-      img {
+      .cardImg {
         position: absolute;
         right: 310px;
+      }
+      .fa-bookmark {
+        color: #a8a8a8;
+        position: absolute;
+        left: 327px;
+        bottom: 343px;
+      }
+
+      .circle-icon {
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      .text {
+        .title {
+          bottom: 365px;
+          position: absolute;
+          left: 402px;
+        }
+        p {
+          top: 47px;
+          position: absolute;
+          left: 402px;
+        }
+        .footer {
+          bottom: 21px;
+          position: absolute;
+          left: 402px;
+          .rating {
+            margin-left: 164px;
+            .fa-star {
+              color: #ffd333;
+              margin-right: 3px;
+            }
+          }
+        }
       }
     }
     .box2 {
       width: 400px;
       height: 338px;
       align-self: flex-end;
-      img {
+      .cardImg {
         position: absolute;
         bottom: 183px;
+      }
+
+      .fa-bookmark {
+        color: $GreenOpacity;
+        position: absolute;
+        left: 323px;
+        bottom: 343px;
+      }
+      .circle-icon {
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .text {
+        .title {
+          bottom: 150px;
+          position: absolute;
+          margin-left: 20px;
+        }
+        p {
+          top: 202px;
+          position: absolute;
+          margin-left: 20px;
+        }
+        .footer {
+          bottom: 21px;
+          position: absolute;
+          margin-left: 20px;
+          .rating {
+            margin-left: 246px;
+            .fa-star {
+              color: #ffd333;
+              margin-right: 3px;
+            }
+          }
+        }
       }
     }
     .box1,
@@ -52,5 +172,13 @@
 
   .boxes3 {
     margin-top: 110px;
+  }
+}
+
+//RESPONSIVE TABLET
+
+@media #{$tablet} {
+  .section4 {
+    display: none;
   }
 }

@@ -13,24 +13,27 @@
   margin: 0;
   padding: 0;
 }
+
 .container {
   margin: 0px 340px;
 }
 
-// @media #{$phone} {
-//   h1 {
-//     color: blue;
-//   }
-// }
+@media #{$phone} {
+  .container {
+    margin: 0px 0px;
+  }
+}
 
-// @media #{$tablet} {
-//   h1 {
-//     color: yellow;
-//   }
-// }
+@media #{$tablet} {
+  .container {
+    margin: 0px 0px;
+  }
+}
 
-// @media #{$desktop} {
-//   h1 {
-//     color: purple;
-//   }
-// }
+@media #{$desktop} {
+  .section1 {
+    .box4 {
+      display: none;
+    }
+  }
+}

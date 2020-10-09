@@ -1,5 +1,250 @@
-.header {
-  li {
+@import "./colorVariables";
+
+@font-face {
+  font-family: "MonserratRegular";
+  src: url("../fonts/Montserrat/Montserrat_am3-Regular.ttf");
+}
+
+@font-face {
+  font-family: "MonserratBold";
+  src: url("../fonts/Montserrat/Montserrat_am3-Bold.ttf");
+}
+
+@font-face {
+  font-family: "SegoeuiRegular";
+  src: url("../fonts/segoe-ui/Segoe-ui/SEGOEUI.TTF");
+}
+
+header {
+  nav {
+    li {
+      font-family: "SegoeuiRegular";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 60px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.breadcrumb {
+  font-family: "MonserratRegular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.slogan {
+  h1 {
+    font-family: "MonserratBold";
+    font-style: normal;
+    font-size: 50px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #292929;
+  }
+}
+
+.section1 {
+  .filter {
+    font-family: "SegoeuiRegular";
+    font-style: normal;
     font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+    .chosen {
+      font-family: "SegoeuiRegular";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 140%;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.text {
+  .title {
+    font-family: "SegoeuiRegular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $Green;
+  }
+  p {
+    font-family: "MonserratBold";
+    font-style: normal;
+    font-size: 18px;
+    line-height: 140%;
+  }
+  .footer {
+    font-family: "SegoeuiRegular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #888888;
+  }
+}
+
+footer {
+  .social {
+    font-family: "SegoeuiRegular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #828282;
+  }
+  .about {
+    font-family: "MonserratRegular";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #3e3e3e;
+    .contact {
+      font-family: "MonserratRegular";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: #828282;
+      text-transform: initial;
+    }
+  }
+}
+
+.info {
+  .disclaimer {
+    font-family: "SegoeuiRegular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 180%;
+    color: #828282;
+    opacity: 0.8;
+  }
+  .copyright {
+    font-size: 12px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+
+    color: #4f4f4f;
+  }
+  .zoom {
+    font-family: "SegoeuiRegular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 150%;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    color: #4f4f4f;
+  }
+}
+
+.section2 {
+  .divider {
+    font-family: "MonserratRegular";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #454545;
+    .fa-bolt {
+      font-size: 30px;
+    }
+  }
+}
+
+.partners {
+  font-family: "MonserratRegular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #454545;
+}
+
+@media #{$tablet} {
+  .text {
+    .title {
+      font-family: "SegoeuiRegular";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: $Green;
+    }
+  }
+  footer {
+    .about {
+      .box1,
+      .box2,
+      .box3 {
+        font-size: 10px;
+      }
+    }
+    .contact {
+      .box4 {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media #{$phone} {
+  header {
+    .breadcrumb {
+      font-size: 10px;
+    }
+    .slogan {
+      h1 {
+        font-size: 22px;
+      }
+    }
+  }
+  .section1 {
+    .filter {
+      ul {
+        .chosen {
+          font-size: 10px;
+        }
+      }
+    }
+    .boxes {
+      .box1 {
+        .text {
+          .title {
+            font-size: 10px;
+          }
+          p {
+            font-size: 14px;
+          }
+          .footer {
+            font-size: 12px;
+          }
+        }
+      }
+    }
   }
 }

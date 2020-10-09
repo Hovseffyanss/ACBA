@@ -1,6 +1,25 @@
 .section2 {
   margin: 0px 260px;
   margin-top: 111px;
+  .divider {
+    margin: -0.65em auto -1em;
+    overflow: hidden;
+    line-height: 1.2em;
+  }
+  .divider:before,
+  .divider:after {
+    content: "";
+    vertical-align: top;
+    display: inline-block;
+    width: 50%;
+    height: 0.65em;
+    border-bottom: 3px solid #fff;
+    margin: 0 100px 0 -55%;
+  }
+  .divider:after {
+    margin: 0 -55% 0 2%;
+  }
+
   .boxes {
     display: flex;
     justify-content: space-between;
@@ -18,10 +37,57 @@
       background: #ffffff;
       box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.15);
       border-radius: 15px;
-      img {
+      .fa-bookmark {
+        color: #a8a8a8;
+        position: absolute;
+        left: 323px;
+        bottom: 343px;
+      }
+      .circle-icon {
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      .cardImg {
         position: absolute;
         bottom: 183px;
       }
+      .text {
+        .title {
+          bottom: 150px;
+          position: absolute;
+          margin-left: 20px;
+        }
+        p {
+          top: 202px;
+          position: absolute;
+          margin-left: 20px;
+        }
+        .footer {
+          bottom: 21px;
+          position: absolute;
+          margin-left: 20px;
+          .rating {
+            margin-left: 246px;
+            .fa-star {
+              color: #ffd333;
+              margin-right: 3px;
+            }
+          }
+        }
+      }
     }
+  }
+}
+
+//RESPONSIVE TABLET
+
+@media #{$tablet} {
+  .section2 {
+    display: none;
   }
 }

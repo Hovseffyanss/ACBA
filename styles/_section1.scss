@@ -2,17 +2,77 @@
   .boxes {
     display: flex;
     justify-content: space-between;
-    // flex-wrap: wrap;
+    .box1,
+    .box3 {
+      .fa-bookmark {
+        color: #a8a8a8;
+        position: absolute;
+        left: 323px;
+        bottom: 343px;
+      }
+      .circle-icon {
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+    }
+    .box2 {
+      .fa-bookmark {
+        color: $GreenOpacity;
+        position: absolute;
+        left: 323px;
+        bottom: 343px;
+      }
+
+      .circle-icon {
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+    }
     .box1,
     .box2,
-    .box3 {
+    .box3,
+    .box4 {
       height: 338px;
       width: 400px;
       position: relative;
       background: #ffffff;
       box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.15);
       border-radius: 15px;
-      img {
+      .text {
+        .title {
+          bottom: 150px;
+          position: absolute;
+          margin-left: 20px;
+        }
+        p {
+          top: 202px;
+          position: absolute;
+          margin-left: 20px;
+        }
+        .footer {
+          bottom: 21px;
+          position: absolute;
+          margin-left: 20px;
+          .rating {
+            margin-left: 246px;
+            .fa-star {
+              color: #ffd333;
+              margin-right: 3px;
+            }
+          }
+        }
+      }
+      .cardImg {
         position: absolute;
         bottom: 183px;
       }
@@ -30,9 +90,48 @@
       background: #ffffff;
       box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.15);
       border-radius: 15px;
-      img {
+      .fa-bookmark {
+        color: #a8a8a8;
+        position: absolute;
+        left: 189px;
+        bottom: 185px;
+      }
+      .circle-icon {
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      .cardImg {
         position: absolute;
         right: 301px;
+      }
+      .text {
+        .title {
+          left: 265px;
+          position: absolute;
+          margin-top: 20px;
+        }
+        p {
+          left: 265px;
+          top: 67px;
+          position: absolute;
+        }
+        .footer {
+          bottom: 21px;
+          position: absolute;
+          left: 265px;
+          .rating {
+            margin-left: 154px;
+            .fa-star {
+              color: #ffd333;
+              margin-right: 3px;
+            }
+          }
+        }
       }
     }
     .box1 {
@@ -52,13 +151,166 @@
         box-sizing: border-box;
         border-radius: 32px;
         margin-right: 20px;
-        padding: 1px 35px;
+        padding: 15px 35px;
         color: $GrayMutedText;
+
+        i {
+          margin-right: 8px;
+        }
       }
       .chosen {
         background: rgba(36, 125, 70, 0.08);
         color: $Green;
         opacity: 1;
+        border: none;
+      }
+    }
+  }
+}
+
+//RESPONSIVE TABLET
+
+@media #{$tablet} {
+  .section1 {
+    .boxes2 {
+      display: none;
+    }
+    .boxes {
+      flex-wrap: wrap;
+      .box1,
+      .box2,
+      .box3,
+      .box4 {
+        .fa-bookmark {
+          display: none;
+        }
+        height: 338px;
+        margin: 20px;
+        margin-top: 40px;
+        width: 344px;
+        position: relative;
+        background: #ffffff;
+        box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.15);
+        border-radius: 15px;
+        .cardImg {
+          width: 330px;
+          height: 188px;
+        }
+        .text {
+          .title {
+            bottom: 150px;
+            position: absolute;
+            margin-left: 20px;
+          }
+          p {
+            top: 202px;
+            position: absolute;
+            margin-left: 20px;
+          }
+          .footer {
+            bottom: 21px;
+            position: absolute;
+            margin-left: 20px;
+            .rating {
+              margin-left: 200px;
+              .fa-star {
+                color: #ffd333;
+                margin-right: 3px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .filter {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      overflow: auto;
+      white-space: nowrap;
+      height: 60px;
+      ul {
+        margin-left: 30px;
+        li {
+          margin-right: 14px;
+          padding: 15px 27px;
+        }
+      }
+    }
+  }
+}
+
+//RESPONSIVE MOBILE
+
+@media #{$phone} {
+  .section1 {
+    .boxes2 {
+      display: none;
+    }
+    .boxes {
+      .box2,
+      .box3,
+      .box4 {
+        display: none;
+      }
+      .box1 {
+        width: 280px;
+        height: 253.65px;
+        margin: auto;
+        .fa-bookmark {
+          display: none;
+        }
+        .cardImg {
+          width: 268.6px;
+          height: 152.56px;
+          position: absolute;
+          bottom: 143px;
+        }
+        .text {
+          .title {
+            bottom: 118px;
+            position: absolute;
+            margin-left: 20px;
+          }
+          p {
+            top: 144px;
+            position: absolute;
+            margin-left: 20px;
+          }
+          .footer {
+            bottom: 18px;
+            position: absolute;
+            margin-left: 20px;
+            .rating {
+              margin-left: 150px;
+              .fa-star {
+                color: #ffd333;
+                margin-right: 3px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .filter {
+      margin-top: 24px;
+      margin: 20px;
+      margin-bottom: 75px;
+      li:nth-child(2),
+      li:nth-child(3),
+      li:nth-child(4) {
+        display: none;
+      }
+      ul {
+        li {
+          padding: 15px;
+          width: 100%;
+        }
+        .chosen {
+          background: rgba(36, 125, 70, 0.08);
+          color: $Green;
+          opacity: 1;
+          border: none;
+        }
       }
     }
   }
