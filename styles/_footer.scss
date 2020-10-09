@@ -8,6 +8,21 @@ footer {
     justify-content: space-between;
     align-items: center;
     .social {
+      .fa-twitter,
+      .fa-facebook-f,
+      .fa-linkedin-in,
+      .fa-play {
+        color: $Green;
+      }
+      .circle-icon {
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+      }
       ul {
         list-style: none;
         display: flex;
@@ -26,7 +41,7 @@ footer {
       }
     }
   }
-  .contact {
+  .about {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
@@ -43,9 +58,40 @@ footer {
       }
     }
   }
+  .contact {
+    i {
+      padding-right: 15px;
+    }
+  }
 }
 hr {
   border: 2px dashed #000000;
   opacity: 0.2;
   margin-top: 9px;
+}
+
+.info {
+  margin-top: 48px;
+  display: flex;
+}
+
+.copyright {
+  margin-top: 11px;
+  display: inline-block;
+}
+
+.zoom {
+  display: flex;
+  // align-items: flex-end !important;
+  img {
+    padding-left: 30px;
+  }
+}
+
+@media #{$tablet} {
+  footer {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 555px;
+  }
 }
